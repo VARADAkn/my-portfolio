@@ -292,26 +292,33 @@
 
     
     /* Skills */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
+    /* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
 
-    .skill-item {
-      background: #eef7fd;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
+.skill-item {
+  background: #eef7fd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #2c3e50; /* Add default text color */
+}
 
-    .skill-item:hover {
-      background: #0a66c2;
-      color: white;
-      transform: translateY(-5px);
-    }
+.skill-item:hover {
+  background: #0a66c2;
+  color: white; /* Ensure text changes to white on hover */
+  transform: translateY(-5px);
+}
 
+.skill-item h3 {
+  color: inherit; /* Make h3 inherit the color from parent */
+  margin: 0; /* Remove default margin */
+  font-size: 1.1rem; /* Adjust font size if needed */
+}
     /* Projects */
     .project-card {
       margin-bottom: 30px;
